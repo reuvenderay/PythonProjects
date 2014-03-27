@@ -25,7 +25,7 @@ print "Turn 1 of 10"
 for turn in range(1, 11):
     print_board(board)
     guess_row = int(raw_input("Guess Row:"))
-    guess_col = int(raw_input("Guess Collumn:"))
+    guess_col = int(raw_input("Guess Column:"))
 
     if guess_row not in range(1, 6) or guess_col not in range(1, 6):
         print "Oops, that's not even in the ocean."
