@@ -5,7 +5,7 @@ def get_name():
     u_name = ""
     while u_name.isalpha() is False:
         u_name = raw_input("Please enter your name:")[:20]
-        if u_name == "exit":
+        if u_name == "exit" or u_name == "quit":
             return False
     return u_name
 
@@ -14,7 +14,7 @@ def get_age():
     age = ""
     while age.isdigit() is False or int(age) not in range(1, 120):
         age = raw_input("Please enter your age:")
-        if age == "exit":
+        if age == "exit" or age == "quit":
             return False
     return age
 
@@ -23,7 +23,7 @@ def get_user_id():
     uid = ""
     while len(uid) != 6 or uid.isdigit() is False or int(uid) not in range(1, 1000000):
         uid = raw_input("Please enter your User ID:")
-        if uid == "exit":
+        if uid == "exit" or uid == "quit":
             return False
     return uid
 
