@@ -1,4 +1,5 @@
 
+
 beer = 99
 
 while beer >= 0:
